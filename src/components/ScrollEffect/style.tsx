@@ -37,6 +37,9 @@ export const NewContainer = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 10vw;
+  font-size: 5vw;
   margin-top: 500px;
+  @media (max-width: 768px) {
+    font-size: 10vw;
+  }
 `;
