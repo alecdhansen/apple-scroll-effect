@@ -73,7 +73,7 @@ Error generating stack: `+o.message+`
   padding-top: 65px;
 `,Lm=Hn.div`
   background-color: #000;
-  height: 200vh;
+  height: 125vh;
   display: flex;
   justify-content: center;
 `,Om=Hn.h2`
