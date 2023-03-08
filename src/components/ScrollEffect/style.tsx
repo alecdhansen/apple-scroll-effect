@@ -14,13 +14,18 @@ export const CanvasContainer = styled.div`
   /* background-color: green; */
 `;
 
+export const ImageContainer = styled.div`
+  width: 50%;
+`;
+
 export const TestImage = styled.img`
-  width: 500px;
+  width: 100%;
 `;
 
 export const Text = styled.h2`
-  font-size: 60px;
-  margin-left: 200px;
+  font-size: 5vw;
+  margin: none;
+  margin-left: 20px;
   padding-top: 65px;
 `;
 
@@ -32,6 +37,6 @@ export const NewContainer = styled.div`
 `;
 
 export const Title = styled.h2`
-  font-size: 60px;
+  font-size: 10vw;
   margin-top: 500px;
 `;

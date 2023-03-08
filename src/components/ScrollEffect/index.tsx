@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import {
   CanvasContainer,
   Container,
+  ImageContainer,
   NewContainer,
   TestImage,
   Text,
@@ -27,9 +28,11 @@ const ScrollEffect = () => {
     <>
       <Container>
         <CanvasContainer>
-          <TestImage
-            src={`AirPodImages/${scrolled.toString().padStart(4, "0")}.jpg`}
-          />
+          <ImageContainer>
+            <TestImage
+              src={`AirPodImages/${scrolled.toString().padStart(4, "0")}.jpg`}
+            />
+          </ImageContainer>
           <Text>Apple AirPods</Text>
         </CanvasContainer>
       </Container>
