@@ -21,6 +21,15 @@ const ScrollEffect = () => {
     setScrolled(scrollLength);
   };
   useEffect(() => {
+    const images: string[] = [];
+    console.log({ images });
+    for (let i = 1; i <= 147; i++) {
+      images.push(
+        (new Image().src = `AirPodImages/${i.toString().padStart(4, "0")}.jpg`)
+      );
+    }
+  }, []);
+  useEffect(() => {
     window.addEventListener("scroll", scrollProgress);
     return () => window.removeEventListener("scroll", scrollProgress);
   }, []);
