@@ -26,7 +26,7 @@ export const Text = styled.h2`
 
 export const NewContainer = styled.div`
   background-color: #000;
-  height: 200vh;
+  height: 125vh;
   display: flex;
   justify-content: center;
 `;
