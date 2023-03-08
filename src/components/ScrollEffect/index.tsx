@@ -28,7 +28,7 @@ const ScrollEffect = () => {
       <Container>
         <CanvasContainer>
           <TestImage
-            src={`Public/AirPodImages/${scrolled
+            src={`public/AirPodImages/${scrolled
               .toString()
               .padStart(4, "0")}.jpg`}
           />
