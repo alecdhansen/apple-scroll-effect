@@ -32,7 +32,7 @@ const ScrollEffect = () => {
             <TestImage
               src={`AirPodImages/${scrolled.toString().padStart(4, "0")}.jpg`}
               alt=""
-              loading="eager"
+              loading="lazy"
             />
           </ImageContainer>
           <Text>Apple AirPods</Text>
