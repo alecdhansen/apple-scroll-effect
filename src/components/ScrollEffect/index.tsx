@@ -31,6 +31,8 @@ const ScrollEffect = () => {
           <ImageContainer>
             <TestImage
               src={`AirPodImages/${scrolled.toString().padStart(4, "0")}.jpg`}
+              alt=""
+              loading="eager"
             />
           </ImageContainer>
           <Text>Apple AirPods</Text>
