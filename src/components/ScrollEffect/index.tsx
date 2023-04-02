@@ -13,7 +13,7 @@ const ScrollEffect = () => {
   const [scrolled, setScrolled] = useState<number>(0);
   const [images, setImages] = useState<HTMLImageElement[]>([]);
   const [airpodsHeight, setAirpodsHeight] = useState<number>(0);
-  const frameCount = 146;
+  const frameCount = 147;
   const [scrollYPosition, setScrollYPosition] = useState<number>(0);
   const airpodsContainer = useRef() as MutableRefObject<HTMLDivElement>;
   const handleScroll = () => {
@@ -47,7 +47,7 @@ const ScrollEffect = () => {
   }, [scrollYPosition]);
 
   const preloadImages = () => {
-    for (let i = 1; i <= frameCount; i++) {
+    for (let i = 0; i <= frameCount; i++) {
       const img: HTMLImageElement = new Image();
       img.src = `/AirPodImages/${i.toString().padStart(4, "0")}.jpg`;
       setImages((prevImages: HTMLImageElement[]) => [...prevImages, img]);
